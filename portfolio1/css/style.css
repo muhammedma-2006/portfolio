@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    height: 100vh;
+    background: url('../images/mishab2.jpg') no-repeat center center/cover;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+   
+}
+
+/* Navbar */
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-brand h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+ 
+
+.navbar-nav .nav-link {
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f9004d;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Section Titles */
+h1, h2.section-title {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+hr.divider {
+    margin: 0 auto;
+    border: none;
+    height: 3px;
+    width: 120px;
+    background: #f9004d;
+}
+
+/* About Section */
+#about {
+    padding: 5rem 0;
+    background-color: #000;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#about img {
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+/* Skills Section */
+#skills {
+    padding: 5rem 0;
+    background-color: #000;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+}
+
+.img-fluid {
+    min-width: 50px;
+    min-height: 50px;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 0.4s ease;
+}
+
+.progress-bar.bg-success {
+    background: #4caf50;
+}
+
+.progress-bar.bg-primary {
+    background: #007bff;
+}
+
+.progress-bar.bg-warning {
+    background: #ffc107;
+}
+
+.progress-bar.bg-danger {
+    background: #dc3545;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #f9004d;
+    transition: color 0.3s ease-in-out;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    #about img {
+        width: 90%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
