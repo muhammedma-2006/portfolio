@@ -132,10 +132,21 @@ hr.divider {
 .progress {
     width: 100%;
     height: 10px;
-    background: #333;
+    background: #1a1a1a00;
     border-radius: 5px;
     overflow: hidden;
     margin-top: 10px;
+    animation: skill 2s ease-in-out  forwards ;
+
+}
+@keyframes skill {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+    
 }
 
 .progress-bar {
