@@ -78,7 +78,7 @@ export const projects = [
     // PLACEHOLDER IMAGE URL:
     // To use your own screenshot, place the file in /public/projects/blood-link.png
     // and set image: "/projects/blood-link.png". If null/empty, a rich interactive browser mockup will render.
-    image: null, 
+    image: "./projects/BloodLink.png", 
     mockupType: "bloodlink",
     
     liveUrl: "https://bloodlink-muhammed.vercel.app", // EDIT: Replace with deployed URL or set to null

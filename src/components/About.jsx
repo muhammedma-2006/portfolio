@@ -68,38 +68,37 @@ export default function About() {
 
           {/* Right Column: Architectural Focus Areas (5 cols) */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="p-1 rounded-xl bg-gradient-to-b from-blue-500/20 to-transparent">
-              <div className="p-6 rounded-lg bg-surface border border-slate-850">
-                <div className="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4 pb-3 border-b border-slate-800">
-                  <Terminal className="w-4 h-4 text-blue-400" />
-                  <span>CORE INTERESTS & PRACTICES</span>
-                </div>
+            <div className="p-6 rounded-xl bg-[#0F172A] border border-[#1E293B]">
+              <div className="flex items-center space-x-2.5 text-sm font-mono text-slate-400 mb-4 pb-3 border-b border-[#1E293B]">
+                &nbsp;
+                <Terminal className="w-4 h-4 text-blue-400" />
+                <span >CORE INTERESTS & PRACTICES</span>
+              </div>
 
-                <div className="space-y-4">
-                  {focusAreas.map((area, idx) => {
-                    const IconComponent = iconMap[area.icon] || Server;
-                    return (
-                      <div 
-                        key={idx}
-                        className="group p-3 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/30 transition-colors"
-                      >
-                        <div className="flex items-start space-x-3">
-                          <div className="p-2 rounded-md bg-blue-500/10 text-blue-400 shrink-0 mt-0.5 group-hover:bg-blue-500/20 transition-colors">
-                            <IconComponent className="w-4 h-4" />
-                          </div>
-                          <div>
-                            <h4 className="text-sm font-semibold text-white group-hover:text-blue-300 transition-colors">
-                              {area.title}
-                            </h4>
-                            <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                              {area.description}
-                            </p>
-                          </div>
+              <div className="space-y-4">
+                {focusAreas.map((area, idx) => {
+                  const IconComponent = iconMap[area.icon] || Server;
+                  return (
+                    <div 
+                      key={idx}
+                      className="group p-3 rounded-lg bg-[#111C2E] border border-[#22314A] hover:border-blue-500/30 transition-colors"
+                    >
+                      <div className="flex items-start space-x-3">
+                        <div className="p-2 rounded-md bg-blue-500/10 text-blue-400 shrink-0 mt-0.5 group-hover:bg-blue-500/20 transition-colors">
+                          <IconComponent className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-semibold text-white group-hover:text-blue-300 transition-colors">
+                            {area.title}
+                          </h4>
+                          <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                            {area.description}
+                          </p>
                         </div>
                       </div>
-                    );
-                  })}
-                </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

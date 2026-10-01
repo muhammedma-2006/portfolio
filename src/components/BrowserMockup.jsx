@@ -27,14 +27,14 @@ export default function BrowserMockup({ project }) {
   const { title, image, mockupType, liveUrl } = project;
 
   // Custom mock URL for the browser bar
-  const getMockUrl = (type) => {
+  const getUrl = (type) => {
     switch (type) {
       case 'bloodlink':
         return 'https://bloodlink.org/donors/search?group=O-positive';
       case 'pocketflow':
         return 'https://pocketflow.app/dashboard/analytics';
       case 'moviediscovery':
-        return 'https://moviedb-discovery.web.app/trending';
+        return 'https://movie-app-gcnm.vercel.app/explore';
       case 'studentportal':
         return 'http://localhost/student-portal/dashboard.php';
       default:
@@ -56,7 +56,7 @@ export default function BrowserMockup({ project }) {
         {/* URL bar */}
         <div className="flex items-center justify-center space-x-1.5 px-3 py-1 rounded-md bg-slate-950/80 border border-slate-800/70 text-slate-400 font-mono text-[11px] max-w-[70%] truncate">
           <Lock className="w-3 h-3 text-emerald-400 shrink-0" />
-          <span className="truncate">{getMockUrl(mockupType)}</span>
+          <span className="truncate">{getUrl(mockupType)}</span>
         </div>
 
         {/* Action icons / badge */}
