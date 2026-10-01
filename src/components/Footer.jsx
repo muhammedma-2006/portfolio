@@ -1,7 +1,7 @@
 import React from 'react';
 import { personalData } from '../data/portfolioData';
 import { ArrowUp, Mail } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './SocialIcons';
+import { GithubIcon, LinkedinIcon, InstagramIcon } from './SocialIcons';
 
 export default function Footer() {
   const { name, socialLinks } = personalData;
@@ -45,6 +45,16 @@ export default function Footer() {
               aria-label="LinkedIn Profile"
             >
               <LinkedinIcon className="w-4 h-4" />
+            </a>
+
+            <a
+              href={socialLinks.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-pink-400 hover:border-slate-700 transition-colors focus-visible:ring-2 focus-visible:ring-blue-400"
+              aria-label="Instagram Profile"
+            >
+              <InstagramIcon className="w-4 h-4" />
             </a>
 
             <a

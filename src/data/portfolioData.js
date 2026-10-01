@@ -21,7 +21,7 @@ export const personalData = {
   socialLinks: {
     github: "https://github.com/muhammedma-2006",
     linkedin: "https://www.linkedin.com/in/muhammed-m-a-8a8627264/",
-    instagram: "https://www.instagram.com/muhammedma_2006/",
+    instagram: "https://www.instagram.com/_mishab_m_a/",
     email: "muhammedmaponnani@gmail.com", // EDIT: Update with your primary email address
     resume: "/resume.pdf", // EDIT: Place your resume PDF in `public/resume.pdf`
   },
@@ -114,11 +114,11 @@ export const projects = [
     highlights: ["API Integration", "Search Interface", "State Management"],
     
     // PLACEHOLDER IMAGE URL:
-    image: null,
+    image: "./projects/movie-discovery.png",
     mockupType: "moviediscovery",
     
-    liveUrl: "https://moviediscovery-muhammed.vercel.app", // EDIT: Replace with deployed URL or set to null
-    githubUrl: "https://github.com/muhammedma-2006", // EDIT: Add specific repo link if available
+    liveUrl: "https://movie-app-gcnm.vercel.app/", // EDIT: Replace with deployed URL or set to null
+    githubUrl: "https://github.com/muhammedma-2006/MovieApp", // EDIT: Add specific repo link if available
     featured: true
   }
 ];
@@ -131,8 +131,9 @@ export const experiments = [
     description: "A relational database-backed portal built to manage student course enrollments, grade records, and administrative approvals with role-based authentication.",
     stack: ["PHP", "MySQL", "XAMPP", "Apache", "Bootstrap"],
     highlights: ["Relational Schema Normalization", "Session Management", "Role-Based Access Control"],
-    githubUrl: "https://github.com/muhammedma-2006",
-    mockupType: "studentportal"
+    githubUrl: "https://github.com/muhammedma-2006/StudentPortal",
+    mockupType: "studentportal",
+    image: "./projects/student-portal.png", // Placeholder for future screenshot
   }
 ];
 

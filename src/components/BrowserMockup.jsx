@@ -89,11 +89,6 @@ export default function BrowserMockup({ project }) {
             )}
           </div>
         )}
-
-        {/* Discreet indicator helping Muhammed know how to replace */}
-        <div className="absolute bottom-2 right-2 bg-slate-950/85 backdrop-blur-sm border border-slate-800/80 text-[10px] text-slate-400 px-2 py-0.5 rounded font-mono pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
-          Custom screenshot: set in portfolioData.js
-        </div>
       </div>
     </div>
   );
