@@ -96,7 +96,7 @@ export const projects = [
     highlights: ["Dashboard Design", "Data Organization", "Responsive UI"],
     
     // PLACEHOLDER IMAGE URL:
-    image: "./projects/PocketFlow.png", 
+    image: "./projects/pocket-flow.png", 
     mockupType: "pocketflow",
     
     liveUrl: "https://pocketwolf.lovable.app/", // EDIT: Replace with deployed URL or set to null
