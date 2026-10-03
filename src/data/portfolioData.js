@@ -81,8 +81,8 @@ export const projects = [
     image: "./projects/BloodLink.png", 
     mockupType: "bloodlink",
     
-    liveUrl: "https://bloodlink-muhammed.vercel.app", // EDIT: Replace with deployed URL or set to null
-    githubUrl: "https://github.com/muhammedma-2006", // EDIT: Add specific repo link if available
+    liveUrl: "https://blood-link-gules.vercel.app/", // EDIT: Replace with deployed URL or set to null
+    githubUrl: "https://github.com/muhammedma-2006/BloodLink", // EDIT: Add specific repo link if available
     featured: true
   },
   {
@@ -96,10 +96,10 @@ export const projects = [
     highlights: ["Dashboard Design", "Data Organization", "Responsive UI"],
     
     // PLACEHOLDER IMAGE URL:
-    image: null, 
+    image: "./projects/PocketFlow.png", 
     mockupType: "pocketflow",
     
-    liveUrl: "https://pocketflow-muhammed.vercel.app", // EDIT: Replace with deployed URL or set to null
+    liveUrl: "https://pocketwolf.lovable.app/", // EDIT: Replace with deployed URL or set to null
     githubUrl: "https://github.com/muhammedma-2006", // EDIT: Add specific repo link if available
     featured: true
   },
