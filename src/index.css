@@ -71,14 +71,6 @@
   z-index: 0;
 }
 
-.ambient-glow-side {
-  position: absolute;
-  width: 35rem;
-  height: 35rem;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.06) 0%, rgba(8, 12, 20, 0) 70%);
-  pointer-events: none;
-}
-
 /* Skip link styling for keyboard accessibility */
 .skip-to-content {
   position: absolute;

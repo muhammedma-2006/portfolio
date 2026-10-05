@@ -1,14 +1,15 @@
 import React from 'react';
 import { personalData, focusAreas } from '../data/portfolioData';
-import { User, Server, ShieldCheck, Database, Layout, ArrowUpRight, Terminal } from 'lucide-react';
+import { User, Server, ShieldCheck, Database, Layout, Terminal } from 'lucide-react';
+
+const ICON_MAP = {
+  Server,
+  ShieldCheck,
+  Database,
+  Layout
+};
 
 export default function About() {
-  const iconMap = {
-    Server: Server,
-    ShieldCheck: ShieldCheck,
-    Database: Database,
-    Layout: Layout
-  };
 
   return (
     <section 
@@ -77,7 +78,7 @@ export default function About() {
 
               <div className="space-y-4">
                 {focusAreas.map((area, idx) => {
-                  const IconComponent = iconMap[area.icon] || Server;
+                  const IconComponent = ICON_MAP[area.icon] || Server;
                   return (
                     <div 
                       key={idx}

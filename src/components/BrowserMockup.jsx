@@ -1,21 +1,31 @@
 import React from 'react';
 import { 
-  Shield, 
   Search, 
-  Heart, 
   Droplet, 
-  TrendingUp, 
-  ArrowUpRight, 
-  ArrowDownLeft, 
   Film, 
   Star, 
   GraduationCap, 
   CheckCircle2, 
   Lock,
-  ExternalLink,
   Layers,
   Database
 } from 'lucide-react';
+
+// Custom mock URL for the browser bar
+const getUrl = (type) => {
+  switch (type) {
+    case 'bloodlink':
+      return 'https://bloodlink.org/donors/search?group=O-positive';
+    case 'pocketflow':
+      return 'https://pocketflow.app/dashboard/analytics';
+    case 'moviediscovery':
+      return 'https://movie-app-gcnm.vercel.app/explore';
+    case 'studentportal':
+      return 'http://localhost/student-portal/dashboard.php';
+    default:
+      return 'https://project.local';
+  }
+};
 
 /**
  * BrowserMockup Component
@@ -24,23 +34,7 @@ import {
  * Otherwise, renders an authentic, responsive custom UI mockup for the given project.
  */
 export default function BrowserMockup({ project }) {
-  const { title, image, mockupType, liveUrl } = project;
-
-  // Custom mock URL for the browser bar
-  const getUrl = (type) => {
-    switch (type) {
-      case 'bloodlink':
-        return 'https://bloodlink.org/donors/search?group=O-positive';
-      case 'pocketflow':
-        return 'https://pocketflow.app/dashboard/analytics';
-      case 'moviediscovery':
-        return 'https://movie-app-gcnm.vercel.app/explore';
-      case 'studentportal':
-        return 'http://localhost/student-portal/dashboard.php';
-      default:
-        return 'https://project.local';
-    }
-  };
+  const { title, image, mockupType } = project;
 
   return (
     <div className="w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800/90 shadow-2xl transition-all duration-300 group-hover:border-blue-500/40 group-hover:shadow-glow">

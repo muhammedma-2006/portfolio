@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Sparkles, CheckCircle } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
 import BrowserMockup from './BrowserMockup';
 
@@ -7,7 +7,7 @@ import BrowserMockup from './BrowserMockup';
  * Reusable Editorial Project Card
  * Shows project mockup, category, title, problem statement, key highlights, stack, and links.
  */
-export default function ProjectCard({ project, index }) {
+export default function ProjectCard({ project }) {
   const {
     title,
     category,

@@ -2,34 +2,31 @@ import React from 'react';
 import { skillsData } from '../data/portfolioData';
 import { Code2, Server, Wrench, CheckCircle2 } from 'lucide-react';
 
-export default function Skills() {
-  const categories = [
-    {
-      key: 'frontend',
-      title: 'Frontend Development',
-      icon: Code2,
-      accentColor: 'text-sky-400',
-      badgeBg: 'bg-sky-950/60 border-sky-800/50',
-      data: skillsData.frontend,
-    },
-    {
-      key: 'backend',
-      title: 'Backend Development',
-      icon: Server,
-      accentColor: 'text-blue-400',
-      badgeBg: 'bg-blue-950/60 border-blue-800/50',
-      data: skillsData.backend,
-    },
-    {
-      key: 'tools',
-      title: 'Tools & Platforms',
-      icon: Wrench,
-      accentColor: 'text-teal-400',
-      badgeBg: 'bg-teal-950/60 border-teal-800/50',
-      data: skillsData.tools,
-    },
-  ];
+const CATEGORIES = [
+  {
+    key: 'frontend',
+    title: 'Frontend Development',
+    icon: Code2,
+    accentColor: 'text-sky-400',
+    data: skillsData.frontend,
+  },
+  {
+    key: 'backend',
+    title: 'Backend Development',
+    icon: Server,
+    accentColor: 'text-blue-400',
+    data: skillsData.backend,
+  },
+  {
+    key: 'tools',
+    title: 'Tools & Platforms',
+    icon: Wrench,
+    accentColor: 'text-teal-400',
+    data: skillsData.tools,
+  },
+];
 
+export default function Skills() {
   return (
     <section 
       id="skills" 
@@ -53,7 +50,7 @@ export default function Skills() {
 
         {/* 3-Column Clean Grouped Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {categories.map((category) => {
+          {CATEGORIES.map((category) => {
             const Icon = category.icon;
             const group = category.data;
 

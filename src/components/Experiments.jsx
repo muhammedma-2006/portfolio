@@ -1,6 +1,6 @@
 import React from 'react';
 import { experiments } from '../data/portfolioData';
-import { Terminal, Database, Code2 } from 'lucide-react';
+import { Terminal } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
 import BrowserMockup from './BrowserMockup';
 

@@ -7,7 +7,6 @@ import {
   Send, 
   MapPin, 
   MessageSquare,
-  Sparkles,
   AlertCircle,
   Loader2
 } from 'lucide-react';

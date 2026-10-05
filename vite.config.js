@@ -24,11 +24,20 @@ export default defineConfig(({ mode }) => {
             }
 
             let rawBody = '';
+            let isTooLarge = false;
             req.on('data', chunk => {
               rawBody += chunk;
+              if (rawBody.length > 65536) {
+                isTooLarge = true;
+                res.statusCode = 413;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ success: false, message: 'Payload too large.' }));
+                req.destroy();
+              }
             });
 
             req.on('end', async () => {
+              if (isTooLarge) return;
               let body = {};
               try {
                 if (rawBody) {

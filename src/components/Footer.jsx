@@ -78,9 +78,6 @@ export default function Footer() {
           </div>
 
         </div>
-
-        {/* Tech stack badge line */}
-      
       </div>
     </footer>
   );

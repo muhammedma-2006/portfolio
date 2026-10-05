@@ -4,10 +4,7 @@ import {
   ArrowDown, 
   Mail, 
   Terminal, 
-  CheckCircle2, 
-  Code2, 
-  Layers,
-  ArrowRight
+  CheckCircle2 
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon, WhatsappIcon } from './SocialIcons';
 

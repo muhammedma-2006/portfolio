@@ -3,13 +3,14 @@ import { navigationLinks, personalData } from '../data/portfolioData';
 import { useScrollSpy } from '../hooks/useScrollSpy';
 import { Menu, X } from 'lucide-react';
 
+// Static section IDs for scrollspy
+const SECTION_IDS = navigationLinks.map(link => link.href.replace('#', ''));
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Section IDs for scrollspy
-  const sectionIds = navigationLinks.map(link => link.href.replace('#', ''));
-  const activeId = useScrollSpy(sectionIds, 120);
+  const activeId = useScrollSpy(SECTION_IDS, 120);
 
   // Track scroll position for backdrop blur and shadow
   useEffect(() => {

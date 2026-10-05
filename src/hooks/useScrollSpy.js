@@ -10,7 +10,9 @@ export function useScrollSpy(sectionIds, offset = 100) {
   const [activeId, setActiveId] = useState(sectionIds[0] || 'home');
 
   useEffect(() => {
-    const handleScroll = () => {
+    let ticking = false;
+
+    const updateActiveSection = () => {
       const scrollPosition = window.scrollY + offset;
 
       // Find the section closest to current scroll position
@@ -21,6 +23,7 @@ export function useScrollSpy(sectionIds, offset = 100) {
           const top = element.offsetTop;
           if (scrollPosition >= top) {
             setActiveId(id);
+            ticking = false;
             return;
           }
         }
@@ -30,10 +33,18 @@ export function useScrollSpy(sectionIds, offset = 100) {
       if (window.scrollY < 200 && sectionIds.length > 0) {
         setActiveId(sectionIds[0]);
       }
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateActiveSection);
+        ticking = true;
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // Initial check
+    updateActiveSection(); // Initial check
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
