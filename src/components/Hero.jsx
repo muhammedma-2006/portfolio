@@ -9,7 +9,7 @@ import {
   Layers,
   ArrowRight
 } from 'lucide-react';
-import { GithubIcon, LinkedinIcon, InstagramIcon } from './SocialIcons';
+import { GithubIcon, LinkedinIcon, InstagramIcon, WhatsappIcon } from './SocialIcons';
 
 export default function Hero() {
   const { name, headline, bio, socialLinks, status } = personalData;
@@ -112,7 +112,15 @@ export default function Hero() {
               >
                 <InstagramIcon className="w-4 h-4" />
               </a>
-
+              <a
+                href={socialLinks.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-green-400 hover:border-slate-700 hover:bg-slate-850 transition-all focus-visible:ring-2 focus-visible:ring-blue-400"
+                aria-label="WhatsApp Profile"
+              >
+                <WhatsappIcon className="w-4 h-4" />
+              </a>
               <a
                 href={`mailto:${socialLinks.email}`}
                 className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-emerald-400 hover:border-slate-700 hover:bg-slate-850 transition-all focus-visible:ring-2 focus-visible:ring-blue-400"

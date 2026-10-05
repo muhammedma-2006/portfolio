@@ -60,3 +60,20 @@ export function InstagramIcon({ className = "w-4 h-4", ...props }) {
     </svg>
   );
 }
+export function WhatsappIcon({ className = "w-4 h-4", ...props }) {
+  return (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      {...props}
+    >
+      <path d="M16.75 13.25a2.5 2.5 0 0 1-3.5-3.5m3.5 3.5L21 21l-4.25-4.25zm0 0L15 15m1.75-1.75a6 6 0 1 0-8.5-8.5 6 6 0 0 0 8.5 8.5z" />
+    </svg>
+  );
+}

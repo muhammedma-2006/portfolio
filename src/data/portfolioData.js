@@ -22,6 +22,7 @@ export const personalData = {
     github: "https://github.com/muhammedma-2006",
     linkedin: "https://www.linkedin.com/in/muhammed-m-a-8a8627264/",
     instagram: "https://www.instagram.com/_mishab_m_a/",
+    whatsapp: "https://wa.me/918301034717",
     email: "muhammedmaponnani@gmail.com", // EDIT: Update with your primary email address
     resume: "/resume.pdf", // EDIT: Place your resume PDF in `public/resume.pdf`
   },
